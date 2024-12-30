@@ -12,6 +12,7 @@ public class Command1 {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idCommand;
     private double montant;
+    private Integer creatDate;
 
     @OneToOne
     @JoinColumn(name = "idClient")
